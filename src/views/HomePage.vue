@@ -75,7 +75,7 @@
     </div>
 
     <!-- Wrapper Card -->
-    <div class="relative z-10 min-h-screen flex flex-col justify-end pb-8">
+    <div class="relative z-10 min-h-screen flex flex-col justify-end pb-8 px-8">
       <div class="mx-auto grid grid-cols-2 gap-6 max-w-7xl">
         <!-- Card Brosur & Aktifitas -->
         <div
