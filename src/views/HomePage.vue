@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <header class="absolute top-0 left-0 right-0 z-10 ">
+  <header class="absolute top-0 left-0 right-0 z-10">
     <nav class="flex justify-between items-center bg-transparent px-[80px] pt-0">
       <!-- Logo -->
       <div
@@ -57,7 +57,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen overflow-hidden ">
+  <section class="relative min-h-screen overflow-hidden">
     <!-- Gambar Background -->
     <img
       src="@/assets/homepage.jpg"
@@ -75,11 +75,11 @@
     </div>
 
     <!-- Wrapper Card -->
-    <div class="relative z-10 pt-[180px] pb-[100px]">
-      <div class="mx-[80px] mt-[300px] flex gap-6">
+    <div class="relative z-10 min-h-screen flex flex-col justify-end pb-8">
+      <div class="mx-auto grid grid-cols-2 gap-6 max-w-7xl">
         <!-- Card Brosur & Aktifitas -->
         <div
-          class="w-[600px] h-[174px] mt-[57px] bg-white/40 backdrop-blur-md rounded-xl shadow-lg p-[24px] flex justify-between items-start"
+          class=" mt-[57px] bg-white/40 backdrop-blur-md rounded-xl shadow-lg p-[24px] flex justify-between items-start"
         >
           <div class="w-1/2 pr-4">
             <h2 class="text-xl font-bold text-gray-800 mb-[8px]">Brosur PSB</h2>
@@ -109,7 +109,7 @@
         </div>
 
         <!-- Card Hijau -->
-        <div class="w-[600px] h-[232px] bg-white rounded-xl shadow-lg overflow-hidden flex">
+        <div class=" bg-white rounded-xl shadow-lg overflow-hidden flex">
           <div class="bg-[#3C7B46] py-[24px] text-white w-1/2 p-4 flex flex-col justify-between">
             <div>
               <h3 class="text-xs text-[#8AE3C2] uppercase tracking-wide mb-1">Kabar Darun Najah</h3>
@@ -205,7 +205,11 @@
       <!-- Card 2 -->
       <div>
         <div class="rounded-lg overflow-hidden shadow-sm mb-[24px]">
-          <img src="@/assets/madrasah.jpg" alt="Gedung Madrasah" class="object-cover aspect-square"/>
+          <img
+            src="@/assets/madrasah.jpg"
+            alt="Gedung Madrasah"
+            class="object-cover aspect-square"
+          />
         </div>
         <p class="mt-2 text-sm text-gray-800">Gedung Madrasah</p>
       </div>
@@ -213,7 +217,11 @@
       <!-- Card 3 -->
       <div>
         <div class="rounded-lg overflow-hidden shadow-sm mb-[24px]">
-          <img src="@/assets/komputer.png" alt="Gedung Madrasah" class="object-cover aspect-square"/>
+          <img
+            src="@/assets/komputer.png"
+            alt="Gedung Madrasah"
+            class="object-cover aspect-square"
+          />
         </div>
         <p class="mt-2 text-sm text-gray-800">Gedung Madrasah</p>
       </div>
@@ -222,7 +230,10 @@
       <div>
         <div class="rounded-lg overflow-hidden shadow-sm mb-[24px]">
           <img
-            src="@/assets/sains.png" alt="Laboratorium Sains" class="object-cover aspect-square"/>
+            src="@/assets/sains.png"
+            alt="Laboratorium Sains"
+            class="object-cover aspect-square"
+          />
         </div>
         <p class="mt-2 text-sm text-gray-800">Laboratorium Sains</p>
       </div>
@@ -460,11 +471,7 @@
       <!-- Card 1 -->
       <div>
         <div class="rounded-lg overflow-hidden shadow-sm mb-[24px]">
-          <img
-            src="@/assets/sosmed-1.png"
-            alt="Asrama Santri"
-            class="object-cover aspect-square"
-          />
+          <img src="@/assets/sosmed-1.png" alt="Asrama Santri" class="object-cover aspect-square" />
         </div>
         <div class="flex gap-2">
           <svg
@@ -818,7 +825,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#0A1128] px-[80px] py-6 text-white ">
+  <footer class="bg-[#0A1128] px-[80px] py-6 text-white">
     <div class="flex justify-between items-center">
       <!-- Logo -->
       <img src="@/assets/dn2.png" alt="Logo DN2" class="h-[40px]" />
