@@ -75,7 +75,7 @@
     </div>
 
     <!-- Wrapper Card -->
-    <div class="relative z-10 min-h-screen flex flex-col justify-end pb-8 px-8">
+    <div class="relative z-10 min-h-screen flex flex-col justify-end pb-8 px-[80px]">
       <div class="mx-auto grid grid-cols-2 gap-6 max-w-7xl">
         <!-- Card Brosur & Aktifitas -->
         <div
@@ -241,85 +241,87 @@
   </section>
 
   <!-- Kabar Section -->
-  <section class="py-[100px] px-[80px] bg-[#F2F3F4] max-w-7xl mx-auto">
-    <!-- Header -->
-    <div class="flex justify-between items-center mb-10">
-      <h2 class="text-[26px] font-semibold text-[#080E1E]">Kabar Darun Najah</h2>
-      <a href="#" class="text-sm text-blue-600 hover:underline font-medium">Lihat Semua</a>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-      <!-- Kabar Utama -->
-      <div class="lg:col-span-2">
-        <div class="rounded-xl overflow-hidden mb-4">
-          <img
-            src="@/assets/kabar-utama.jpg"
-            alt="MPLS"
-            class="w-[888px] h-[448px] object-cover rounded-xl shadow"
-          />
-        </div>
-        <h3 class="text-[26px] font-bold text-[#080E1E] mt-[24px] leading-snug">
-          Kegiatan Penutupan Masa Pengenalan Lingkungan Sekolah (MPLS) dengan adanya penandatanganan
-          deklarasi anti ...
-        </h3>
-        <div class="text-sm text-gray-500 mt-[24px]">Admin • 16 Agustus, 2024</div>
+  <section class="bg-[#F2F3F4]">
+    <div class="py-[100px] px-[80px] max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-10">
+        <h2 class="text-[26px] font-semibold text-[#080E1E]">Kabar Darun Najah</h2>
+        <a href="#" class="text-sm text-blue-600 hover:underline font-medium">Lihat Semua</a>
       </div>
 
-      <!-- Daftar Berita Kecil -->
-      <div class="space-y-[32px]">
-        <div class="flex space-x-4">
-          <img
-            src="@/assets/kabar-1.png"
-            alt=""
-            class="w-[120px] h-[120px] rounded-lg object-cover"
-          />
-          <div>
-            <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
-              Kunjungan lapangan mahasiswa prodi ...
-            </p>
-            <p class="text-sm text-gray-500 mt-[16px]">Admin • 18 Jul, 2024</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <!-- Kabar Utama -->
+        <div class="lg:col-span-2">
+          <div class="rounded-xl overflow-hidden mb-4">
+            <img
+              src="@/assets/kabar-utama.jpg"
+              alt="MPLS"
+              class="w-[888px] h-[448px] object-cover rounded-xl shadow"
+            />
           </div>
+          <h3 class="text-[26px] font-bold text-[#080E1E] mt-[24px] leading-snug">
+            Kegiatan Penutupan Masa Pengenalan Lingkungan Sekolah (MPLS) dengan adanya penandatanganan
+            deklarasi anti ...
+          </h3>
+          <div class="text-sm text-gray-500 mt-[24px]">Admin • 16 Agustus, 2024</div>
         </div>
 
-        <div class="flex space-x-4">
-          <img
-            src="@/assets/kabar-2.png"
-            alt=""
-            class="w-[120px] h-[120px] rounded-lg object-cover"
-          />
-          <div>
-            <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
-              Pembelajaran wudhu bagi santri PPAI ...
-            </p>
-            <p class="text-sm text-gray-500 mt-[16px]">Admin • 16 Jul, 2024</p>
+        <!-- Daftar Berita Kecil -->
+        <div class="space-y-[32px]">
+          <div class="flex space-x-4">
+            <img
+              src="@/assets/kabar-1.png"
+              alt=""
+              class="w-[120px] h-[120px] rounded-lg object-cover"
+            />
+            <div>
+              <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
+                Kunjungan lapangan mahasiswa prodi ...
+              </p>
+              <p class="text-sm text-gray-500 mt-[16px]">Admin • 18 Jul, 2024</p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex space-x-4">
-          <img
-            src="@/assets/kabar-3.png"
-            alt=""
-            class="w-[120px] h-[120px] rounded-lg object-cover"
-          />
-          <div>
-            <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
-              Peletakan batu pertama gedung SMP oleh ...
-            </p>
-            <p class="text-sm text-gray-500 mt-[16px]">Admin • 14 Jul, 2024</p>
+          <div class="flex space-x-4">
+            <img
+              src="@/assets/kabar-2.png"
+              alt=""
+              class="w-[120px] h-[120px] rounded-lg object-cover"
+            />
+            <div>
+              <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
+                Pembelajaran wudhu bagi santri PPAI ...
+              </p>
+              <p class="text-sm text-gray-500 mt-[16px]">Admin • 16 Jul, 2024</p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex space-x-4">
-          <img
-            src="@/assets/kabar-4.png"
-            alt=""
-            class="w-[120px] h-[120px] rounded-lg object-cover"
-          />
-          <div>
-            <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
-              Placement Test Penerimaan Santri ...
-            </p>
-            <p class="text-sm text-gray-500 mt-[16px]">Admin • 31 Mei, 2024</p>
+          <div class="flex space-x-4">
+            <img
+              src="@/assets/kabar-3.png"
+              alt=""
+              class="w-[120px] h-[120px] rounded-lg object-cover"
+            />
+            <div>
+              <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
+                Peletakan batu pertama gedung SMP oleh ...
+              </p>
+              <p class="text-sm text-gray-500 mt-[16px]">Admin • 14 Jul, 2024</p>
+            </div>
+          </div>
+
+          <div class="flex space-x-4">
+            <img
+              src="@/assets/kabar-4.png"
+              alt=""
+              class="w-[120px] h-[120px] rounded-lg object-cover"
+            />
+            <div>
+              <p class="text-lg font-semibold text-[#080E1E] leading-snug line-clamp-2">
+                Placement Test Penerimaan Santri ...
+              </p>
+              <p class="text-sm text-gray-500 mt-[16px]">Admin • 31 Mei, 2024</p>
+            </div>
           </div>
         </div>
       </div>
@@ -327,107 +329,109 @@
   </section>
 
   <!-- Program Pembelajaran Section -->
-  <section class="bg-[#0A1128] px-[80px] py-[80px] text-white max-w-7xl mx-auto">
-    <h2 class="text-[32px] font-semibold mb-[64px]">Program <br />Pebelajaran Kami</h2>
+  <section class="bg-[#0A1128]">
+    <div class="py-[100px] px-[80px] text-white max-w-7xl mx-auto">
+      <h2 class="text-[32px] font-semibold mb-[64px]">Program <br />Pebelajaran Kami</h2>
 
-    <!-- Program Cards -->
-    <div class="flex flex-wrap justify-between gap-10 mb-[64px]">
-      <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
-        <img src="@/assets/quran.png" alt="Quran Icon" class="w-[42px] h-[42px]" />
-        <span class="font-medium text-white text-2xl text-base">Tahfidz Qur’an</span>
-      </div>
-      <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
-        <img src="@/assets/bilingual.png" alt="Bilingual Icon" class="w-[42px] h-[42px]" />
-        <span class="font-medium text-white text-2xl text-base">Bilingual</span>
-      </div>
-      <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
-        <img src="@/assets/p5.png" alt="P5 Icon" class="w-[42px] h-[42px]" />
-        <span class="font-medium text-white text-2xl text-base">P5</span>
-      </div>
-    </div>
-
-    <!-- Ekstrakurikuler -->
-    <div class="flex justify-between items-center mb-6">
-      <h3 class="text-2xl font-medium">Ekstrakurikuler</h3>
-      <a href="#" class="text-[#6AF1C3] text-sm font-medium hover:underline">Lihat Semua</a>
-    </div>
-
-    <!-- Ekstrakurikuler Cards -->
-    <div class="flex flex-wrap justify-between gap-x-10 gap-y-10">
-      <!-- Card 1 -->
-      <div class="relative group w-[335px] h-[245px] rounded-md overflow-hidden">
-        <img
-          src="@/assets/ekstra-1.jpg"
-          alt="Menjahit"
-          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-        />
-        <img
-          src="@/assets/ekstra-1.jpg"
-          alt="Menjahit Hover"
-          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-        />
-        <div
-          class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center"
-        >
-          <p class="text-white text-base font-semibold mb-4">Menjahit</p>
+      <!-- Program Cards -->
+      <div class="flex flex-wrap justify-between gap-10 mb-[64px]">
+        <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
+          <img src="@/assets/quran.png" alt="Quran Icon" class="w-[42px] h-[42px]" />
+          <span class="font-medium text-white text-2xl text-base">Tahfidz Qur’an</span>
+        </div>
+        <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
+          <img src="@/assets/bilingual.png" alt="Bilingual Icon" class="w-[42px] h-[42px]" />
+          <span class="font-medium text-white text-2xl text-base">Bilingual</span>
+        </div>
+        <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
+          <img src="@/assets/p5.png" alt="P5 Icon" class="w-[42px] h-[42px]" />
+          <span class="font-medium text-white text-2xl text-base">P5</span>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="relative group w-[335px] h-[245px] rounded-md overflow-hidden">
-        <img
-          src="@/assets/ekstra-2.jpg"
-          alt="Desain Grafis"
-          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-        />
-        <img
-          src="@/assets/ekstra-1.jpg"
-          alt="Desain Grafis Hover"
-          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-        />
-        <div
-          class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center"
-        >
-          <p class="text-white text-base font-semibold mb-4">Desain Grafis</p>
+      <!-- Ekstrakurikuler -->
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-2xl font-medium">Ekstrakurikuler</h3>
+        <a href="#" class="text-[#6AF1C3] text-sm font-medium hover:underline">Lihat Semua</a>
+      </div>
+
+      <!-- Ekstrakurikuler Cards -->
+      <div class="flex flex-wrap justify-between gap-x-10 gap-y-10">
+        <!-- Card 1 -->
+        <div class="relative group w-[335px] h-[245px] rounded-md overflow-hidden">
+          <img
+            src="@/assets/ekstra-1.jpg"
+            alt="Menjahit"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="@/assets/ekstra-1.jpg"
+            alt="Menjahit Hover"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center"
+          >
+            <p class="text-white text-base font-semibold mb-4">Menjahit</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative group w-[335px] h-[245px] rounded-md overflow-hidden">
+          <img
+            src="@/assets/ekstra-2.jpg"
+            alt="Desain Grafis"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="@/assets/ekstra-1.jpg"
+            alt="Desain Grafis Hover"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center"
+          >
+            <p class="text-white text-base font-semibold mb-4">Desain Grafis</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative group w-[335px] h-[245px] rounded-md overflow-hidden">
+          <img
+            src="@/assets/ekstra-3.png"
+            alt="Pramuka"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+          />
+          <img
+            src="@/assets/ekstra-1.jpg"
+            alt="Pramuka Hover"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center"
+          >
+            <p class="text-white text-base font-semibold mb-4">Pramuka</p>
+          </div>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="relative group w-[335px] h-[245px] rounded-md overflow-hidden">
-        <img
-          src="@/assets/ekstra-3.png"
-          alt="Pramuka"
-          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-        />
-        <img
-          src="@/assets/ekstra-1.jpg"
-          alt="Pramuka Hover"
-          class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-        />
-        <div
-          class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center"
+      <!-- Navigasi -->
+      <div class="flex gap-2 mt-8">
+        <button
+          class="w-[40px] h-[40px] rounded-lg bg-[#182856] flex items-center justify-center text-white"
         >
-          <p class="text-white text-base font-semibold mb-4">Pramuka</p>
-        </div>
+          <svg class="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <button
+          class="w-[40px] h-[40px] rounded-lg bg-[#3C7B46] flex items-center justify-center text-white"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
-    </div>
-
-    <!-- Navigasi -->
-    <div class="flex gap-2 mt-8">
-      <button
-        class="w-[40px] h-[40px] rounded-lg bg-[#182856] flex items-center justify-center text-white"
-      >
-        <svg class="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-      <button
-        class="w-[40px] h-[40px] rounded-lg bg-[#3C7B46] flex items-center justify-center text-white"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
     </div>
   </section>
 
