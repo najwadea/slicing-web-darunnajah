@@ -1,6 +1,5 @@
 <template>
   <!-- Navbar -->
-  <!-- Header dan Tombol Setting -->
   <header class="absolute top-0 left-0 right-0 z-60">
     <nav class="flex justify-between items-center bg-transparent px-[80px] pt-0">
       <!-- Logo -->
@@ -11,7 +10,7 @@
         </div>
       </div>
 
-      <!-- Tombol -->
+      <!-- Buttons -->
       <div class="flex items-center space-x-5">
         <!-- Sosial Media -->
         <div class="flex items-center space-x-4">
@@ -23,7 +22,7 @@
           </a>
         </div>
 
-        <!-- Tombol Aksi -->
+        <!-- Button -->
         <div class="flex items-center space-x-5">
           <a href="#" class="flex items-center justify-center bg-white/50 border border-white w-[182px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-gray-100 transition">
             <i class="bi bi-whatsapp text-black text-2xl mr-2"></i> Kontak kami
@@ -39,13 +38,13 @@
     </nav>
   </header>
 
-  <!-- Sidebar Dari Atas -->
+  <!-- Sidebar -->
   <transition name="dropdown" class="z-50">
     <div
       v-if="showSidebar"
       class="absolute top-0 left-0 right-0 bg-[#0A1128] px-[80px] pt-[140px] pb-[80px] z-40 text-white"
     >
-      <!-- Menu Navigasi -->
+      <!-- Menu -->
       <ul class="space-y-6 text-[16px] font-medium">
         <li><a href="#" class="hover:text-gray-300 transition">Profil Sekolah</a></li>
         <li><a href="#" class="hover:text-gray-300 transition">Berita</a></li>
