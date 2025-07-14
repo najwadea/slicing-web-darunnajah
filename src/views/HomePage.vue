@@ -1,60 +1,60 @@
 <template>
   <!-- Navbar -->
-  <header class="absolute top-0 left-0 right-0 z-10">
+  <!-- Header dan Tombol Setting -->
+  <header class="absolute top-0 left-0 right-0 z-60">
     <nav class="flex justify-between items-center bg-transparent px-[80px] pt-0">
       <!-- Logo -->
-      <div
-        class="bg-white shadow rounded-b-[16px] px-[24px] pb-[24px] pt-[36px] flex items-center space-x-3"
-      >
-        <img
-          src="@/assets/logo-darunnajah.png"
-          alt="Logo Sekolah"
-          class="w-12 h-12 object-contain"
-        />
+      <div class="bg-white shadow rounded-b-[16px] px-[24px] pb-[24px] pt-[36px] flex items-center space-x-3">
+        <img src="@/assets/logo-darunnajah.png" alt="Logo Sekolah" class="w-12 h-12 object-contain" />
         <div class="text-sm md:text-base font-bold text-gray-800 leading-snug tracking-wide">
           SMP DARUN NAJAH 2<br />KARANGPLOSO
         </div>
       </div>
 
-      <!-- Social & Buttons -->
+      <!-- Tombol -->
       <div class="flex items-center space-x-5">
+        <!-- Sosial Media -->
         <div class="flex items-center space-x-4">
-          <a
-            href="#"
-            class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center"
-          >
+          <a href="#" class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center">
             <i class="bi bi-instagram text-xl"></i>
           </a>
-          <a
-            href="#"
-            class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center"
-          >
+          <a href="#" class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center">
             <i class="bi bi-youtube text-xl"></i>
           </a>
         </div>
+
+        <!-- Tombol Aksi -->
         <div class="flex items-center space-x-5">
-          <a
-            href="#"
-            target="_blank"
-            class="flex items-center justify-center bg-white/50 border border-white w-[182px] h-[52px] rounded-[8px] px-[28px] text-[15px] font-bold hover:bg-gray-100 transition"
-          >
+          <a href="#" class="flex items-center justify-center bg-white/50 border border-white w-[182px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-gray-100 transition">
             <i class="bi bi-whatsapp text-black text-2xl mr-2"></i> Kontak kami
           </a>
-          <a
-            href="#"
-            class="flex items-center justify-center bg-[#3C7B46] text-white w-[138px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-green-700 transition"
-          >
+          <a href="#" class="flex items-center justify-center bg-[#3C7B46] text-white w-[138px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-green-700 transition">
             PSB Online
           </a>
-          <button
-            class="flex items-center justify-center bg-[#182856] text-white h-[52px] px-4 rounded-[8px] hover:bg-blue-800 transition"
-          >
+          <button @click="toggleSidebar" class="flex items-center justify-center bg-[#182856] text-white h-[52px] px-4 rounded-[8px] hover:bg-blue-800 transition">
             <i class="bi bi-sliders text-lg"></i>
           </button>
         </div>
       </div>
     </nav>
   </header>
+
+  <!-- Sidebar Dari Atas -->
+  <transition name="dropdown" class="z-50">
+    <div
+      v-if="showSidebar"
+      class="absolute top-0 left-0 right-0 bg-[#0A1128] px-[80px] pt-[140px] pb-[80px] z-40 text-white"
+    >
+      <!-- Menu Navigasi -->
+      <ul class="space-y-6 text-[16px] font-medium">
+        <li><a href="#" class="hover:text-gray-300 transition">Profil Sekolah</a></li>
+        <li><a href="#" class="hover:text-gray-300 transition">Berita</a></li>
+        <li><a href="#" class="hover:text-gray-300 transition">Profil Sekolah</a></li>
+        <li><a href="#" class="hover:text-gray-300 transition">Fasilitas</a></li>
+        <li><a href="#" class="hover:text-gray-300 transition">Galeri</a></li>
+      </ul>
+    </div>
+  </transition>
 
   <!-- Hero Section -->
   <section class="relative min-h-screen overflow-hidden">
@@ -66,7 +66,7 @@
     />
 
     <!-- Scroll Indicator -->
-    <div class="absolute top-[150px] right-[80px] z-50 flex flex-col items-center">
+    <div class="absolute top-[150px] right-[80px] z-40 flex flex-col items-center">
       <div class="text-white text-lg font-bold">01</div>
       <div class="w-[5px] h-[70px] bg-white rounded-full"></div>
       <div class="w-[5px] h-[70px] bg-white/50"></div>
@@ -337,15 +337,15 @@
       <div class="flex flex-wrap justify-between gap-10 mb-[64px]">
         <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
           <img src="@/assets/quran.png" alt="Quran Icon" class="w-[42px] h-[42px]" />
-          <span class="font-medium text-white text-2xl text-base">Tahfidz Qur’an</span>
+          <span class="font-medium text-white text-2xl">Tahfidz Qur’an</span>
         </div>
         <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
           <img src="@/assets/bilingual.png" alt="Bilingual Icon" class="w-[42px] h-[42px]" />
-          <span class="font-medium text-white text-2xl text-base">Bilingual</span>
+          <span class="font-medium text-white text-2xl">Bilingual</span>
         </div>
         <div class="w-[335px] h-[100px] bg-[#1C2331] rounded-md flex items-center gap-3 px-5 py-5">
           <img src="@/assets/p5.png" alt="P5 Icon" class="w-[42px] h-[42px]" />
-          <span class="font-medium text-white text-2xl text-base">P5</span>
+          <span class="font-medium text-white text-2xl">P5</span>
         </div>
       </div>
 
@@ -874,8 +874,34 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const showSidebar = ref(false)
+
+const toggleSidebar = () => {
+  showSidebar.value = !showSidebar.value
+}
+
 // Fungsi Button Back to Top
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>
+
+<style scoped>
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: all 0.3s ease;
+}
+.dropdown-enter-from,
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.dropdown-enter-to,
+.dropdown-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
