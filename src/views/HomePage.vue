@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <header class="absolute top-0 left-0 right-0 z-60">
+  <header v-if="!showSidebar" class="absolute top-0 left-0 right-0 z-50">
     <nav class="flex justify-between items-center bg-transparent px-[80px] pt-0">
       <!-- Logo -->
       <div class="bg-white shadow rounded-b-[16px] px-[24px] pb-[24px] pt-[36px] flex items-center space-x-3">
@@ -10,9 +10,9 @@
         </div>
       </div>
 
-      <!-- Buttons -->
+      <!-- Sosial & Buttons -->
       <div class="flex items-center space-x-5">
-        <!-- Sosial Media -->
+        <!-- Sosmed -->
         <div class="flex items-center space-x-4">
           <a href="#" class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center">
             <i class="bi bi-instagram text-xl"></i>
@@ -22,9 +22,47 @@
           </a>
         </div>
 
-        <!-- Button -->
+        <!-- Tombol -->
+        <a href="#" target="_blank" class="flex items-center justify-center bg-white/50 border border-white w-[182px] h-[52px] rounded-[8px] px-[28px] text-[15px] font-bold hover:bg-gray-100 transition">
+          <i class="bi bi-whatsapp text-black text-2xl mr-2"></i> Kontak kami
+        </a>
+        <a href="#" class="flex items-center justify-center bg-[#3C7B46] text-white w-[138px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-green-700 transition">
+          PSB Online
+        </a>
+        <button @click="toggleSidebar" class="flex items-center justify-center bg-[#182856] text-white h-[52px] px-4 rounded-[8px] hover:bg-blue-800 transition">
+          <i class="bi bi-sliders text-lg"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <transition name="dropdown">
+    <div v-if="showSidebar" class="absolute top-0 left-0 right-0 bg-[#0A1128] px-[80px]  pb-[80px] z-50 ">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center bg-transparent">
+        <!-- Logo -->
+        <div class="bg-white shadow rounded-b-[16px] px-[24px] pb-[24px] pt-[36px] flex items-center space-x-3">
+          <img src="@/assets/logo-darunnajah.png" alt="Logo Sekolah" class="w-12 h-12 object-contain" />
+          <div class="text-sm md:text-base font-bold text-gray-800 leading-snug tracking-wide">
+            SMP DARUN NAJAH 2<br />KARANGPLOSO
+          </div>
+        </div>
+
+        <!-- Sosial & Buttons -->
         <div class="flex items-center space-x-5">
-          <a href="#" class="flex items-center justify-center bg-white/50 border border-white w-[182px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-gray-100 transition">
+          <!-- Sosmed -->
+          <div class="flex items-center space-x-4">
+            <a href="#" class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center">
+              <i class="bi bi-instagram text-xl"></i>
+            </a>
+            <a href="#" class="w-[44px] h-[44px] bg-white/50 border border-white rounded-full hover:bg-white transition flex items-center justify-center">
+              <i class="bi bi-youtube text-xl"></i>
+            </a>
+          </div>
+
+          <!-- Tombol -->
+          <a href="#" target="_blank" class="flex items-center justify-center bg-white/50 border border-white w-[182px] h-[52px] rounded-[8px] px-[28px] text-[15px] font-bold hover:bg-gray-100 transition">
             <i class="bi bi-whatsapp text-black text-2xl mr-2"></i> Kontak kami
           </a>
           <a href="#" class="flex items-center justify-center bg-[#3C7B46] text-white w-[138px] h-[52px] rounded-[8px] text-[15px] font-bold hover:bg-green-700 transition">
@@ -34,21 +72,12 @@
             <i class="bi bi-sliders text-lg"></i>
           </button>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
 
-  <!-- Sidebar -->
-  <transition name="dropdown" class="z-50">
-    <div
-      v-if="showSidebar"
-      class="absolute top-0 left-0 right-0 bg-[#0A1128] px-[80px] pt-[140px] pb-[80px] z-40 text-white"
-    >
       <!-- Menu -->
-      <ul class="space-y-6 text-[16px] font-medium">
+      <ul class="space-y-6 pt-7 text-lg text-white font-medium">
         <li><a href="#" class="hover:text-gray-300 transition">Profil Sekolah</a></li>
         <li><a href="#" class="hover:text-gray-300 transition">Berita</a></li>
-        <li><a href="#" class="hover:text-gray-300 transition">Profil Sekolah</a></li>
         <li><a href="#" class="hover:text-gray-300 transition">Fasilitas</a></li>
         <li><a href="#" class="hover:text-gray-300 transition">Galeri</a></li>
       </ul>
