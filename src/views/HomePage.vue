@@ -902,6 +902,7 @@
 </template>
 
 <script setup>
+// Sidebar
 import { ref } from 'vue'
 
 const showSidebar = ref(false)
