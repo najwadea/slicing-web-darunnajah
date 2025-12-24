@@ -7,3 +7,4 @@
     <RouterView/>
   </div>
 </template>
+
