@@ -41,7 +41,7 @@
 
             <li>
               <RouterLink
-                to="/struktur-organisasi"
+                to="/struktur"
                 class="px-2 py-1 block hover:text-[#080E1E] hover:font-bold transition"
               >
                 Struktur Organisasi

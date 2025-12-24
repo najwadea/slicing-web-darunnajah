@@ -1705,83 +1705,81 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
+// =====================
 // Sidebar Toggle
-
+// =====================
 const showSidebar = ref(false)
 const activeMenu = ref(null)
 
 const toggleSidebar = () => {
   showSidebar.value = !showSidebar.value
-  // Reset active menu saat sidebar ditutup
-  if (!showSidebar.value) {
-    activeMenu.value = null
-  }
+  if (!showSidebar.value) activeMenu.value = null
 }
 
 const toggleSubmenu = (menu) => {
   activeMenu.value = activeMenu.value === menu ? null : menu
 }
 
+// =====================
 // Scroll Pembelajaran Section
+// =====================
 const scrollContainer = ref(null)
 
 const scrollLeft = () => {
-  if (scrollContainer.value) {
-    scrollContainer.value.scrollBy({ left: -350, behavior: 'smooth' })
-  }
+  scrollContainer.value?.scrollBy({ left: -350, behavior: 'smooth' })
 }
 
 const scrollRight = () => {
-  if (scrollContainer.value) {
-    scrollContainer.value.scrollBy({ left: 350, behavior: 'smooth' })
-  }
+  scrollContainer.value?.scrollBy({ left: 350, behavior: 'smooth' })
 }
 
-// Back to Top Button
+// =====================
+// Back To Top
+// =====================
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-// Hero Section Carousel
-const currentIndex = ref(0)
-const heroImages = ref([])
-const totalImages = ref(0)
-const STORAGE_KEY = 'uploadedImages'
+// =====================
+// Hero Section Carousel (TANPA localStorage)
+// =====================
+import homepageImg from '@/assets/homepage.jpg'
 
-onMounted(() => {
-  const savedImages = JSON.parse(localStorage.getItem(STORAGE_KEY))
-  if (savedImages && Array.isArray(savedImages) && savedImages.length > 0) {
-    heroImages.value = savedImages
-    totalImages.value = savedImages.length
-  } else {
-    // Default gambar jika belum upload
-    heroImages.value = [
-      require('@/assets/homepage.jpg'),
-      require('@/assets/default-hero2.jpg'),
-      require('@/assets/default-hero3.jpg'),
-    ]
-    totalImages.value = heroImages.value.length
-  }
-  startCarousel()
-})
+
+const heroImages = ref([
+  homepageImg,
+
+])
+
+const currentIndex = ref(0)
+const totalImages = ref(heroImages.value.length)
 
 let interval = null
 
+onMounted(() => {
+  startCarousel()
+})
+
 function startCarousel() {
   interval = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % heroImages.value.length
-  }, 5000) // Ganti gambar setiap 5 detik
+    currentIndex.value =
+      (currentIndex.value + 1) % heroImages.value.length
+  }, 5000)
 }
 
 onUnmounted(() => {
   if (interval) clearInterval(interval)
 })
 
-// Format Nomor Indikator
+// =====================
+// Format Nomor Indicator
+// =====================
 function formatNumber(num) {
   return num < 10 ? `0${num}` : `${num}`
 }
 </script>
+
+
 
 <style scoped>
 .dropdown-enter-active,
